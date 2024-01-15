@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulations</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Informations en Temps Réel</h1>
+    </header>
+
+    <section id="map-section">
+        <div id="leaflet-map"></div>
+    </section>
+
+    <section id="traffic-section">
+        <h2>Trafic Automobile en Temps Réel</h2>
+        <ul id="traffic-list"></ul>
+    </section>
+
+    <section id="covid-section">
+        <h2>Dynamique de l'Épidémie de la Covid</h2>
+        <canvas id="covid-chart"></canvas>
+    </section>
+
+    <section id="air-quality-section">
+        <h2>Qualité de l'Air</h2>
+        <div id="air-quality-icon"></div>
+    </section>
+
+    <footer>
+        <p>Ressources:
+            <a href="lien_api_trafic">API Trafic</a>,
+            <a href="lien_api_covid">API Covid</a>,
+            <a href="lien_api_air">API Qualité de l'Air</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

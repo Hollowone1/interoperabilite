@@ -1,0 +1,18 @@
+main {
+    flex: 1;
+    margin: 20px;
+}
+
+#leaflet-map {
+    height: 300px;
+    border: aliceblue 2px solid;
+}
+
+#traffic-list {
+    list-style: none;
+    padding: 0;
+}
+
+#traffic-list li {
+    margin-bottom: 10px;
+}

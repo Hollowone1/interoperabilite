@@ -1,0 +1,61 @@
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  flex: 1;
+  margin: 20px;
+}
+
+#leaflet-map {
+  height: 300px;
+  border: aliceblue 2px solid;
+}
+
+#traffic-list {
+  list-style: none;
+  padding: 0;
+}
+
+#traffic-list li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  position: relative;
+  background-color: #333;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("../traffic.jpg") center center/cover no-repeat fixed;
+  filter: blur(20px);
+  opacity: 0.5;
+  z-index: -1;
+}/*# sourceMappingURL=styles.css.map */

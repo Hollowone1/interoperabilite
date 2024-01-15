@@ -1,0 +1,13 @@
+
+
+@mixin backgroundBlur($image, $blur, $opacity) {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('#{$image}') center center/cover no-repeat fixed;
+    filter: blur(#{$blur});
+    opacity: $opacity;
+}
