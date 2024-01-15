@@ -1,4 +1,4 @@
-
+ const L = fetch("https://tile.openstreetmap.org/{z}/{x}/{y}.png")
  var map = L.map('leaflet-map').setView([latitude, longitude], 13);
  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
@@ -23,4 +23,14 @@
          }
      }
 });
+
+
+ function fetchTraffic() {
+    let trafficSection = document.getElementById("traffic-section")
+    const response = fetch("https://www.datagrandest.fr/data4citizen/d4c/api/datasets/2.0/search/q=traffic&rows=2&start=2&facet.mincount=2&facet.limit=2");
+    const traffic =  response.json();
+    console.log(traffic)
+    trafficSection.innerHTML(traffic)
+  }
+  
 
